@@ -1,3 +1,8 @@
+#include <iostream>
+
+using namespace std;
+
+
 class MyClass {       // The class
   public:             // Access specifier
     int myNum;        // Attribute (int variable)
@@ -14,5 +19,6 @@ int main() {
   // Print attribute values
   cout << myObj.myNum << "\n";
   cout << myObj.myString;
+  
   return 0;
 }
