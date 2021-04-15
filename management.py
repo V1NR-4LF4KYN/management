@@ -2,8 +2,11 @@
 
 class Manager:
     value = 0
-    def Manager(self):
+    def __init__(self):
         self.value = 1
+    def __init__(self, sValue):
+        self.value = sValue
+
 
     def getValue(self):
         return self.value
@@ -11,6 +14,8 @@ class Manager:
         self.value = pValue
 
 
-m = Manager()
-m.setValue(5)
+m = Manager(244)
+n = Manager(3)
+print(n.getValue())
+#m.setValue(5)
 print(m.getValue())
