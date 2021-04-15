@@ -1,21 +1,33 @@
 #!/usr/bin/python3
 
-class Manager:
-    value = 0
-    def __init__(self):
-        self.value = 1
-    def __init__(self, sValue):
-        self.value = sValue
+class Student:
+    def __init__(self, pName, pId, pAge, pSex, pRoom):
+        self.name = pName
+        self.id = pId
+        self.age = pAge
+        self.sex = pSex
+        self.room = pRoom
 
-
-    def getValue(self):
-        return self.value
-    def setValue(self, pValue):
-        self.value = pValue
-
-
-m = Manager(244)
-n = Manager(3)
-print(n.getValue())
-#m.setValue(5)
-print(m.getValue())
+    # getters 
+    def getName(self):
+        return self.name
+    def getId(self):
+        return self.id
+    def getAge(self):
+        return self.age
+    def getSex(self):
+        return self.age
+    def getRoom(self):
+        return self.room
+    
+    # setters
+    def setName(self, pName):
+        self.name = pName
+    def setId(self, pId):
+        self.id = pId
+    def setAge(self, pAge):
+        self.age = pAge
+    def setSex(self, pSex):
+        self.age = pSex
+    def setRoom(self, pRoom):
+        self.room = pRoom
